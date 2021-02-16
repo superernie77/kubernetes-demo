@@ -24,6 +24,12 @@ kubectl get nodes -o wide
 kubectl get pods
 ```
 
+### pod details
+```
+kubectl describe pods [name]
+```
+
+
 ### list services
 ```
 kubectl get services
@@ -45,6 +51,7 @@ kubectl create -f worker-app-pod.yml
 kubectl create -f result-app-pod.yml
 kubectl create -f result-app-service.yml
 ```
+-f : File Option
 
 ### execute all files in folder
 ```
