@@ -1,5 +1,24 @@
 # kubernetes commands 
 
+### version info
+```
+kubectl version
+```
+
+### cluster information
+```
+kubectl cluster-info
+```
+### list nodes
+```
+kubectl get nodes
+```
+
+### list nodes with extended infos
+```
+kubectl get nodes -o wide
+```
+
 ### list pods
 ```
 kubectl get pods
