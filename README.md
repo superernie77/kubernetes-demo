@@ -35,6 +35,34 @@ kubectl describe pods [name]
 kubectl get services
 ```
 
+### list replication controllers
+```
+kubectl get replicationcontroller
+```
+
+### list replicasets
+```
+kubectl get replicaset
+```
+
+### scale replicaset to new value
+```
+kubectl scale --replicas=[new value] replicaset-definition.yml
+```
+
+### scale replicaset with type/name syntax
+```
+kubectl scale --replicas=[new value] replicaset [name of rs]
+```
+
+
+### update replicaset with new file
+```
+kubectl replace -f replicaset-definition.yml
+```
+
+
+
 ### deploy demo files
 ```
 kubectl create -f voting-app-pod.yml
