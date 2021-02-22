@@ -45,6 +45,11 @@ kubectl get replicationcontroller
 kubectl get replicaset
 ```
 
+### list deployments
+```
+kubectl get deployments
+```
+
 ### scale replicaset to new value
 ```
 kubectl scale --replicas=[new value] replicaset-definition.yml
@@ -93,3 +98,24 @@ kubectl get all
 ```
 kubectl apply -f voting-app-deployment.yml
 ```
+
+### Rollout Status
+```
+kubectl rollout status deployment/[name of deployment]
+```
+
+### Rollout Status
+```
+kubectl rollout status deployment[name of deployment]
+```
+
+### Rollback 
+```
+kubectl rollout undo deployment[name of deployment]
+```
+
+### Deployment Strategies
+- Recreate (drop all - recreate all)
+- Rolling Update (default strategy)
+
+
