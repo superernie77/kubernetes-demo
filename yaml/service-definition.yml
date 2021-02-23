@@ -6,6 +6,7 @@ metadata:
     app: myapp
     type: front-end
 spec:
+  # can be ClusterIp (default) or LoadBalancer too.
   type: NodePort
   ports:
     - targetPort: 80
