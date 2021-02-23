@@ -85,6 +85,7 @@ kubectl create -f result-app-pod.yml
 kubectl create -f result-app-service.yml
 ```
 -f : File Option
+--record : Records change cause. Records commmand that created/changes item 
 
 ### execute all files in folder
 ```
