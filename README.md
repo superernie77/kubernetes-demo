@@ -119,4 +119,9 @@ kubectl rollout undo deployment[name of deployment]
 - Recreate (drop all - recreate all)
 - Rolling Update (default strategy)
 
+## Find out URL on minikube
+```
+minikube service [name] --url
+```
+
 
