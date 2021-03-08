@@ -1,5 +1,4 @@
 # OpenShift and Minishift commands 
-
 ### add OS CLI to class path
 ```
 minishift oc-env
@@ -18,7 +17,6 @@ oc login -u [username] -p [password]
 ```
 oc whoami -t
 ```
-
 ### curl to Rest API
 ```
 curl -k https://[host]:8443/oapi/v1/projects -H "Authorizatiob: Bearer [token]"
@@ -27,7 +25,6 @@ curl -k https://[host]:8443/oapi/v1/projects -H "Authorizatiob: Bearer [token]"
 ```
 oc get projects
 ```
-
 ### List Users
 ```
 oc get users
@@ -36,4 +33,19 @@ oc get users
 ```
 oc adm policy add-cluster-role-to-user cluster-admin [username]
 ```
-
+### rollout latest version of an app
+```
+oc rollout latest [name of oc deployment]
+```
+### view rollout history
+```
+oc rollout history [name of oc deployment]
+```
+### view rollout details
+```
+oc rollout describe [name of oc deployment]
+```
+### rollback rollout 
+```
+oc rollout undo [name of oc deployment]
+```
