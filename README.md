@@ -102,11 +102,6 @@ kubectl apply -f voting-app-deployment.yml
 
 ### Rollout Status
 ```
-kubectl rollout status deployment/[name of deployment]
-```
-
-### Rollout Status
-```
 kubectl rollout status deployment[name of deployment]
 ```
 
