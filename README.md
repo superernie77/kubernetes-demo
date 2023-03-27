@@ -19,14 +19,23 @@ kubectl get nodes
 kubectl get nodes -o wide
 ```
 
-### list pods
+### list pods (from current namespace)
 ```
 kubectl get pods
+```
+
+### list pods with extended infos (from current namespace)
+```
+kubectl get pods -o wide
 ```
 
 ### pod details
 ```
 kubectl describe pods [name]
+```
+### show yaml of a pod
+```
+kubectl get pod [name] -o yaml
 ```
 
 
