@@ -39,3 +39,8 @@ docker stop <container_alias>
 `
 docker exec -it <container_alias> sh
 `
+## List all local Images with Image size
+`
+docker images
+`
+
